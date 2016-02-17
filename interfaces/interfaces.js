@@ -85,4 +85,12 @@ var Clock2 = (function () {
 })();
 var cs = Clock2;
 var newClock = new cs(2, 30);
+var square = {};
+square.color = 'blue';
+square.sideLength = 10;
+square.penWidth = 5.0;
+var c;
+c(10);
+c.reset();
+c.interval = 5.0;
 //# sourceMappingURL=interfaces.js.map
