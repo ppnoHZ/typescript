@@ -13,14 +13,11 @@ function printLabel(labelledObj) {
 ;
 var myObj = { size: 12, label: 'size 12 object' };
 printLabel(myObj); //size 12 object
-;
 function printLed(labelledObj) {
     console.log(labelledObj.label);
 }
-;
 var my = { size: 10, label: 'size 10 object' };
 printLed(my); //size 10 object
-;
 //定义返回值的类型必须包含某些字段，定义参数必须符合某些属性
 function caeateSquare(config) {
     var newSquare = { color: 'white', area: 100 };
