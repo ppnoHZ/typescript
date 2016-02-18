@@ -10,9 +10,9 @@ var name = 'bob';
 name = 'zdd';
 //字符模板
 console.log("---------字符模板--------");
-var n = "Gene";
+var n = `Gene`;
 var age = 37;
-var sentenct = "hello ,my name is " + n + ",age: " + (age + 1);
+var sentenct = `hello ,my name is ${n},age: ${age + 1}`;
 console.log(sentenct); //hello ,my name is Gene,age: 38
 console.log("---------字符模板--------");
 //数组
@@ -61,4 +61,3 @@ var listAny = [1, "d", true];
 //void于any相反
 function warnUser() {
 }
-//# sourceMappingURL=types.js.map

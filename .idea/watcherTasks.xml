@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectTasksOptions">
     <TaskOptions isEnabled="false">
-      <option name="arguments" value="$FileName$ --outDir $ProjectFileDir$/bin-debug/$FileDirRelativeToProjectRoot$" />
+      <option name="arguments" value="$FileName$  --outDir $ProjectFileDir$/bin-debug/$FileDirRelativeToProjectRoot$" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" value="Compiles .ts files into .js files" />
       <option name="exitCodeBehavior" value="ERROR" />
