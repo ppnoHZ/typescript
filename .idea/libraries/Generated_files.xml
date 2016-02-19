@@ -2,8 +2,10 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/types/types.js" />
+        <item url="file://$PROJECT_DIR$/命名空间/index1.js" />
         <item url="file://$PROJECT_DIR$/class/class.js" />
+        <item url="file://$PROJECT_DIR$/interfaces/interfaces.js" />
+        <item url="file://$PROJECT_DIR$/types/types.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -15,8 +17,10 @@
       <root url="file://$PROJECT_DIR$/tt.js" />
       <root url="file://$PROJECT_DIR$/d/d.js" />
       <root url="file://$PROJECT_DIR$/tt.js" />
-      <root url="file://$PROJECT_DIR$/types/types.js" />
+      <root url="file://$PROJECT_DIR$/namespace/index1.js" />
       <root url="file://$PROJECT_DIR$/class/class.js" />
+      <root url="file://$PROJECT_DIR$/interfaces/interfaces.js" />
+      <root url="file://$PROJECT_DIR$/types/types.js" />
     </CLASSES>
     <SOURCES />
   </library>

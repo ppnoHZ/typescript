@@ -1,7 +1,7 @@
 /**
  * Created by zhoudd on 2016/2/17.
  */
-class Greeter {
+class Greeter1 {
     greeting:string;
 
     constructor(message:string) {
@@ -13,7 +13,7 @@ class Greeter {
     }
 
 }
-var greeter = new Greeter('world');
+var greeter = new Greeter1('world');
 
 
 //类继承

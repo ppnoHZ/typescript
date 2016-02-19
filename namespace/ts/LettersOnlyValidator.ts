@@ -1,0 +1,1 @@
+/** * Created by ID on 16/2/19. * Author:zhoudd * email:zhoudd@stark.tm *//// <reference path="Validation.ts" />namespace Validation {    const lettersRegexp = /^[A-Za-z]+$/;    export class LettersOnlyValidatorEx implements StringValidationEx {        isAcceptable(s:string){            return lettersRegexp.test(s);        }    }}

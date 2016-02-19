@@ -22,12 +22,12 @@ var list1 = [1, 2, 3];
 var listStrings = ["1", "22", "2"];
 //枚举
 //定义
-var color;
-(function (color) {
-    color[color["red"] = 0] = "red";
-    color[color["green"] = 1] = "green";
-    color[color["blue"] = 2] = "blue";
-})(color || (color = {}));
+var color3;
+(function (color3) {
+    color3[color3["red"] = 0] = "red";
+    color3[color3["green"] = 1] = "green";
+    color3[color3["blue"] = 2] = "blue";
+})(color3 || (color3 = {}));
 //定义值
 var color1;
 (function (color1) {
@@ -42,9 +42,9 @@ var color2;
     color2[color2["blue"] = 6] = "blue";
 })(color2 || (color2 = {}));
 //使用
-var c = 0 /* red */;
+var cc = color3.red;
 //通过数值查找对应的名字。
-var colorName = color[1];
+var colorName = color3[1];
 console.log(colorName); //green
 //any
 var notSure = 4;
@@ -61,3 +61,4 @@ var listAny = [1, "d", true];
 //void于any相反
 function warnUser() {
 }
+//# sourceMappingURL=types.js.map

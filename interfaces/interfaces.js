@@ -1,12 +1,6 @@
 /**
  * Created by ID on 16/2/17.
  */
-var __extends = this.__extends || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    __.prototype = b.prototype;
-    d.prototype = new __();
-};
 function printLabel(labelledObj) {
     console.log(labelledObj.label);
 }
@@ -56,15 +50,13 @@ mySearch1 = function (src, sub) {
     }
 };
 var myStringArray;
-myStringArray = ['bob', 'fred'];
-var Clock = (function () {
-    function Clock(h, m) {
+class Clock {
+    constructor(h, m) {
     }
-    Clock.prototype.setTime = function (d) {
+    setTime(d) {
         this.currentTime = d;
-    };
-    return Clock;
-})();
+    }
+}
 //这是因为当一个类实现一个接口时，
 //只有实例的部分会被进行检查。构造函数属于静态的部分，
 //它并不在检查的范围之内。所以下面会报错
@@ -74,32 +66,29 @@ var Clock = (function () {
 //
 //    }
 //}
-var Clock2 = (function () {
-    function Clock2(h, m) {
+class Clock2 {
+    constructor(h, m) {
     }
-    return Clock2;
-})();
+}
 var cs = Clock2;
 var newClock = new cs(2, 30);
 function createClock(ctor, hour, minute) {
     return new ctor(hour, minute);
 }
-var DigitalClock = (function () {
-    function DigitalClock(h, m) {
+class DigitalClock {
+    constructor(h, m) {
     }
-    DigitalClock.prototype.tick = function () {
+    tick() {
         console.log("beep beep");
-    };
-    return DigitalClock;
-})();
-var AnalogClock = (function () {
-    function AnalogClock(h, m) {
     }
-    AnalogClock.prototype.tick = function () {
+}
+class AnalogClock {
+    constructor(h, m) {
+    }
+    tick() {
         console.log("tick tock");
-    };
-    return AnalogClock;
-})();
+    }
+}
 var digital = createClock(DigitalClock, 12, 17);
 var analog = createClock(AnalogClock, 7, 32);
 var square = {};
@@ -127,53 +116,32 @@ c.interval = 5.0;
  * 这意味着当你创建了一个接口继承了一个拥有私有或受保护的成员的类时，
  * 这个接口类型只能被这个类或其子类所实现
  */
-var Control = (function () {
-    function Control() {
-    }
-    return Control;
-})();
-var Button = (function (_super) {
-    __extends(Button, _super);
-    function Button() {
-        _super.apply(this, arguments);
-    }
-    Button.prototype.select = function () {
+class ControlEx {
+}
+class ButtonEx extends ControlEx {
+    select() {
         console.log('button');
-    };
-    return Button;
-})(Control);
-var TextBox = (function (_super) {
-    __extends(TextBox, _super);
-    function TextBox() {
-        _super.apply(this, arguments);
     }
-    TextBox.prototype.select = function () {
+}
+class TextBoxEx extends ControlEx {
+    select() {
         console.log('TextBox');
-    };
-    return TextBox;
-})(Control);
-var Tab = (function (_super) {
-    __extends(Tab, _super);
-    function Tab() {
-        _super.apply(this, arguments);
     }
-    return Tab;
-})(Control);
-var Box = (function () {
-    function Box() {
+}
+class Tab extends ControlEx {
+}
+class Box {
+    select() {
     }
-    Box.prototype.select = function () {
-    };
-    return Box;
-})();
-var textbox = new TextBox();
-var button = new Button();
+}
+var textbox = new TextBoxEx();
+var buttonex = new ButtonEx();
 var tab = new Tab();
 textbox.select(); //TextBox
-button.select(); //button
+buttonex.select(); //button
 //tab.select();//Error: Property 'select' does not exist on type 'Tab'.
 //通过接口调用
-var v = new TextBox();
+var v = new TextBoxEx();
 v.select(); //TextBox
 /**
  * 在上面的例子里，SelectableControl包含了Control的所有成员，包括私有成员state。

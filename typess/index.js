@@ -1,14 +1,11 @@
-var Birds = (function () {
-    function Birds() {
-    }
-    Birds.prototype.fly = function () {
+class Birds {
+    fly() {
         console.log('Birds.fly');
-    };
-    Birds.prototype.layEggs = function () {
+    }
+    layEggs() {
         console.log('Birds.layEggs');
-    };
-    return Birds;
-})();
+    }
+}
 function getSamllPet() {
     //可以返回 Fish 也可能返回Bird
     return new Birds();
@@ -63,26 +60,26 @@ function padLeft(value, padding) {
     }
     throw new Error("Expected string or number, got '${value}'.");
 }
-var SpaceRepeatingPadder = (function () {
-    function SpaceRepeatingPadder(numSpaces) {
+class SpaceRepeatingPadder {
+    constructor(numSpaces) {
         this.numSpaces = numSpaces;
     }
-    SpaceRepeatingPadder.prototype.getPaddingString = function () {
+    getPaddingString() {
         return Array(this.numSpaces).join(" ");
-    };
-    return SpaceRepeatingPadder;
-})();
-var StringPadder = (function () {
-    function StringPadder(value) {
+    }
+}
+class StringPadder {
+    constructor(value) {
         this.value = value;
     }
-    StringPadder.prototype.getPaddingString = function () {
+    getPaddingString() {
         return this.value;
-    };
-    return StringPadder;
-})();
+    }
+}
 function getRandomPadder() {
-    return Math.random() < 0.5 ? new SpaceRepeatingPadder(4) : new StringPadder("  ");
+    return Math.random() < 0.5 ?
+        new SpaceRepeatingPadder(4) :
+        new StringPadder("  ");
 }
 // 类型为SpaceRepeatingPadder | StringPadder
 var padder = getRandomPadder();

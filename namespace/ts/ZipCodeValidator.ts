@@ -1,0 +1,1 @@
+/** * Created by ID on 16/2/19. * Author:zhoudd * email:zhoudd@stark.tm *////<reference path="Validation.ts"/>namespace Validation {    const numberRegexp = /^[0-9]+$/;    export class ZipCodeValidatorEx implements StringValidationEx {        isAcceptable(s:string) {            return numberRegexp.test(s);        }    }}

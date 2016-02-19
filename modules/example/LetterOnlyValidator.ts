@@ -1,0 +1,1 @@
+/** * Created by ID on 16/2/19. * Author:zhoudd * email:zhoudd@stark.tm */import {StringValidator} from "./Validation"const letterRegexp=/^[A-z]$/;export class LetterOnlyValidator implements StringValidator{    isAcceptable(s:string){        return true;    }}
