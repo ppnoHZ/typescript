@@ -1,10 +1,10 @@
 angular.module("RegistrationApp", ['ngRoute'])
-    .factory('logger', function () {
+    .factory('logger', () => {
     return new DefaultLogger();
 })
     .controller('RegistrationsContrller', RegistrationsViewModel)
     .controller('RegisterController', RegisterViewModel)
-    .config(function ($routeProvider) {
+    .config(($routeProvider) => {
     $routeProvider
         .when('/', {
         templateUrl: 'views/registrations.html',
