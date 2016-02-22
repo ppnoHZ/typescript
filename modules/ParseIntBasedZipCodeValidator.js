@@ -8,4 +8,6 @@
 //        return parseInt(s);
 //    }
 //}
+var ZipCodeValidator_1 = require("./ZipCodeValidator");
+exports.ParseIntBasedZipCodeValidator = ZipCodeValidator_1.ZipCodeValidator;
 //# sourceMappingURL=ParseIntBasedZipCodeValidator.js.map
