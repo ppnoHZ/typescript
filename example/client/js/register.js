@@ -1,15 +1,14 @@
-var RegisterViewModel = (function () {
-    function RegisterViewModel($scope, $http, logger) {
+class RegisterViewModel {
+    constructor($scope, $http, logger) {
         this.logger = logger;
-        $scope.save = function () {
+        $scope.save = () => {
             $http.post('/api/register', { name: $scope.name, salutation: $scope.salutation, age: $scope.age }, { headers: { "Content-Type": "application/json" } })
-                .success(function (_) {
+                .success(_ => {
                 alert('注册成功!');
-            }).error(function (_) {
+            }).error(_ => {
                 alert('注册失败!');
             });
         };
     }
-    return RegisterViewModel;
-})();
+}
 //# sourceMappingURL=register.js.map
