@@ -34,7 +34,10 @@ var app = express();
 app.use(bodyParser());
 app.use(express.static('../client'));
 
+
+
 app.get('/api/registrations', (req, res) => {
+    console.log(registrations);
     res.send(registrations);
 })
 
@@ -42,10 +45,18 @@ app.post('/api/register', (req, res) => {
     var registration = new Registration(<IRegistration>req.body);
 
     if (registration.isValid()) {
+        console.log(registration);
         registrations.push(registration);
         res.send(201);
     } else {
         res.send(400);
     }
 })
-app.listen(process.env.PORT || 3000);
+app.use((req,res,next)=>{
+    console.log('Time',Date.now());
+    console.log(req,res);
+    //next();
+})
+app.listen(process.env.PORT || 3000,()=>{
+    console.log('listening.... port 3000')
+})

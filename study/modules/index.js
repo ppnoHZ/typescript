@@ -9,7 +9,7 @@ var ParseIntBasedZipCodeValidator_1 = require("./ParseIntBasedZipCodeValidator")
 //var d = new Validator();
 var d = new ParseIntBasedZipCodeValidator_1.ParseIntBasedZipCodeValidator();
 d.isAcceptable('234204');
-var dd = new ParseIntBasedZipCodeValidator_1.ParseIntBasedZipCodeValidator();
-dd.isAcceptable('234204');
 //d.isA
+var a = new ParseIntBasedZipCodeValidator_1.ParseIntBasedZipCodeValidator();
+a.isAcceptable('dddff');
 //# sourceMappingURL=index.js.map
