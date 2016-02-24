@@ -54,7 +54,7 @@ app.post('/api/register', (req, res) => {
 })
 app.use((req,res,next)=>{
     console.log('Time',Date.now());
-    console.log(req,res);
+    console.log(req.body);
     //next();
 })
 app.listen(process.env.PORT || 3000,()=>{

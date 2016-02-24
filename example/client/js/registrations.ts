@@ -41,6 +41,7 @@ class RegistrationsViewModel {
 
         $scope.refresh = () => {
             logger.log('Requesting...');
+            $scope.registrations=[];
             $http.get<Array<IRegistration>>('/api/registrations').success(result=> {
                 result.forEach(r=> $scope.registrations.push(r));
             })

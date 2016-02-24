@@ -36,8 +36,8 @@ app.post('/api/register', function (req, res) {
 });
 app.use(function (req, res, next) {
     console.log('Time', Date.now());
-    console.log(req, res);
-    next();
+    console.log(req.body);
+    //next();
 });
 app.listen(process.env.PORT || 3000, function () {
     console.log('listening.... port 3000');
