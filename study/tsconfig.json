@@ -1,1 +1,10 @@
-{  "compilerOptions": {    "target": "es6",    "noImplicitAny": false,    "module": "commonjs",    "removeComments": false,    "sourceMap": true  }}
+{
+  "compilerOptions": {
+    "target": "es6",
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "removeComments": false,
+    "sourceMap": true,
+    "experimentalDecorators": true
+  }
+}

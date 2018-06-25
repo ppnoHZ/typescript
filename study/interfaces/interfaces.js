@@ -51,10 +51,10 @@ mySearch1 = function (src, sub) {
 };
 var myStringArray;
 class Clock {
-    constructor(h, m) {
-    }
     setTime(d) {
         this.currentTime = d;
+    }
+    constructor(h, m) {
     }
 }
 //这是因为当一个类实现一个接口时，

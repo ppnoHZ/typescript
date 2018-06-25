@@ -1,7 +1,9 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 //import "./ZipCodeValidator" //导出所有了
 //导入默认的
 //import validation from "./ZipCodeValidator";
-var ParseIntBasedZipCodeValidator_1 = require("./ParseIntBasedZipCodeValidator");
+const ParseIntBasedZipCodeValidator_1 = require("./ParseIntBasedZipCodeValidator");
 //import {ParseIntBasedZipCodeValidator as Validator} from "./ParseIntBasedZipCodeValidator"
 //var d = new Validator();
 //将整个模块导入到一个变量

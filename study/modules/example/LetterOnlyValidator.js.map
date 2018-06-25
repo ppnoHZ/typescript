@@ -1,1 +1,1 @@
-{"version":3,"file":"LetterOnlyValidator.js","sourceRoot":"","sources":["LetterOnlyValidator.ts"],"names":["LetterOnlyValidator","LetterOnlyValidator.isAcceptable"],"mappings":"AAAA;;;;GAIG;AAIH,MAAM,YAAY,GAAC,SAAS,CAAC;AAE7B;IACIA,YAAYA,CAACA,CAAQA;QACjBC,MAAMA,CAACA,IAAIA,CAACA;IAChBA,CAACA;AACLD,CAACA;AAJY,2BAAmB,sBAI/B,CAAA"}
+{"version":3,"file":"LetterOnlyValidator.js","sourceRoot":"","sources":["LetterOnlyValidator.ts"],"names":[],"mappings":";AAAA;;;;GAIG;;AAIH,MAAM,YAAY,GAAC,SAAS,CAAC;AAE7B;IACI,YAAY,CAAC,CAAQ;QACjB,MAAM,CAAC,IAAI,CAAC;IAChB,CAAC;CACJ;AAJD,kDAIC"}

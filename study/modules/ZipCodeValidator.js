@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 //export const numberRegexp = /^[0-9]+$/
 //默认导出,只能有一个
 //export default class ZipCodeValidator implements StringValidator {
@@ -16,5 +18,4 @@ class ZipCodeValidator {
 }
 exports.ZipCodeValidator = ZipCodeValidator;
 exports.mainValidator = ZipCodeValidator;
-//export {ZipCodeValidator}
 //# sourceMappingURL=ZipCodeValidator.js.map
